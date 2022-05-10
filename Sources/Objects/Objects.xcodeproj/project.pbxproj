@@ -11,6 +11,10 @@
 		32B25CF52824110800EBA49F /* HomePodShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CF42824110800EBA49F /* HomePodShape.swift */; };
 		32B25CF62824111100EBA49F /* HomePod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CF2282410D500EBA49F /* HomePod.swift */; };
 		32B25CF72824111300EBA49F /* HomePodShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CF42824110800EBA49F /* HomePodShape.swift */; };
+		32B25CF9282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CF8282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift */; };
+		32B25CFA282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CF8282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift */; };
+		32B25CFC282A21CD00EBA49F /* ParticlesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CFB282A21CD00EBA49F /* ParticlesModifier.swift */; };
+		32B25CFD282A21CD00EBA49F /* ParticlesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B25CFB282A21CD00EBA49F /* ParticlesModifier.swift */; };
 		32C23D7A2824007E00CF7841 /* ObjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C23D6A2824007D00CF7841 /* ObjectsApp.swift */; };
 		32C23D7B2824007E00CF7841 /* ObjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C23D6A2824007D00CF7841 /* ObjectsApp.swift */; };
 		32C23D7D2824007E00CF7841 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C23D6B2824007D00CF7841 /* ContentView.swift */; };
@@ -22,6 +26,8 @@
 /* Begin PBXFileReference section */
 		32B25CF2282410D500EBA49F /* HomePod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePod.swift; sourceTree = "<group>"; };
 		32B25CF42824110800EBA49F /* HomePodShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePodShape.swift; sourceTree = "<group>"; };
+		32B25CF8282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicParticlesGeometryEffect.swift; sourceTree = "<group>"; };
+		32B25CFB282A21CD00EBA49F /* ParticlesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesModifier.swift; sourceTree = "<group>"; };
 		32C23D6A2824007D00CF7841 /* ObjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsApp.swift; sourceTree = "<group>"; };
 		32C23D6B2824007D00CF7841 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32C23D6C2824007E00CF7841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 			children = (
 				32B25CF2282410D500EBA49F /* HomePod.swift */,
 				32B25CF42824110800EBA49F /* HomePodShape.swift */,
+				32B25CF8282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift */,
+				32B25CFB282A21CD00EBA49F /* ParticlesModifier.swift */,
 			);
 			path = HomePod;
 			sourceTree = "<group>";
@@ -192,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B25CFC282A21CD00EBA49F /* ParticlesModifier.swift in Sources */,
 				32B25CF3282410D600EBA49F /* HomePod.swift in Sources */,
 				32C23D882824021E00CF7841 /* ContentView.swift in Sources */,
 				32B25CF52824110800EBA49F /* HomePodShape.swift in Sources */,
+				32B25CF9282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift in Sources */,
 				32C23D7A2824007E00CF7841 /* ObjectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,9 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B25CFD282A21CD00EBA49F /* ParticlesModifier.swift in Sources */,
 				32B25CF62824111100EBA49F /* HomePod.swift in Sources */,
 				32C23D7D2824007E00CF7841 /* ContentView.swift in Sources */,
 				32B25CF72824111300EBA49F /* HomePodShape.swift in Sources */,
+				32B25CFA282A20BC00EBA49F /* MusicParticlesGeometryEffect.swift in Sources */,
 				32C23D7B2824007E00CF7841 /* ObjectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

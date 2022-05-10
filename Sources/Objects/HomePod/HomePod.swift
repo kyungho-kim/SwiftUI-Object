@@ -14,6 +14,10 @@ struct HomePod: View {
             
             ZStack {
                 Color.clear
+                Circle()
+                    .fill(.pink)
+                    .frame(width: homePodWidth * 0.05, height: homePodWidth * 0.05)
+                    .modifier(ParticlesModifier(duration: homePodWidth * 0.02))
                 HomePodShape(homePodWidth: homePodWidth)
             }
         }
@@ -26,4 +30,9 @@ struct HomePod_Previews: PreviewProvider {
     static var previews: some View {
         HomePod()
     }
+}
+
+extension NSNotification.Name {
+    static let musicStarted = Notification.Name("musicStarted")
+    static let musicStopped = Notification.Name("musicStopped")
 }

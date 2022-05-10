@@ -10,6 +10,8 @@ import SwiftUI
 struct HomePodShape: View {
     let homePodWidth: CGFloat
     
+    @State var playingMusic: Bool = false
+    
     var body: some View {
         let glassWidth = homePodWidth * 0.62
         let buttonWidth = homePodWidth / 21.0
@@ -19,7 +21,21 @@ struct HomePodShape: View {
             Glass(glassWidth: glassWidth)
                 .overlay(
                     Buttons(buttonWidth: buttonWidth)
+                        .opacity(playingMusic ? 1.0 : 0.0)
                 )
+                .onTapGesture {
+                    guard !playingMusic else { return }
+                    
+                    withAnimation {
+                        self.playingMusic = true
+                    }
+                    NotificationCenter.default.post(name: .musicStarted, object: nil)
+                }
+                .onReceive(NotificationCenter.default.publisher(for: .musicStopped)) { _ in
+                    withAnimation {
+                        playingMusic = false
+                    }
+                }
         }
     }
 }
